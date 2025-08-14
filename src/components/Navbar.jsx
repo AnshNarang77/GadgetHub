@@ -64,7 +64,7 @@ function Navbar() {
 
   <div className='w-screen h-[100%] '>
 
-   <div className='w-[100%] h-[100%] flex flex-col p-25 justify-around pt-10 items-center text-white'>
+   <div className='w-[100%] h-[100%] flex flex-col p-25 pt-5 justify-around pt-10 items-center text-white'>
     <NavLink to="/" className={({isActive})=>`text-xl p-2 ${isActive? ' font-semibold border-b-2   border-red-500': 'text-white'}`} onClick={closeNav}>Home</NavLink>
     <NavLink to="/products" className={({isActive})=>`text-xl p-2 ${isActive? ' font-semibold border-b-2   border-red-500': 'text-white'}`} onClick={closeNav}>Products</NavLink>
     <NavLink to="/about" className={({isActive})=>`text-xl p-2 ${isActive? ' font-semibold border-b-2   border-red-500': 'text-white'}`} onClick={closeNav}>About</NavLink>
