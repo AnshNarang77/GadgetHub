@@ -51,7 +51,7 @@ const {addToCart}=useCart()
 
           <div className="h-[1px] bg-white mt-5 mb-5"></div>
           <div>
-            <button className="bg-black font-semibold p-4" onClick={addToCart(product)}>Add to Cart </button>
+            <button className="bg-black font-semibold p-4" onClick={()=>{addToCart(product); alert("Product added in the cart")}}>Add to Cart </button>
           </div>
           <div className="border-2 flex p-2 mt-5 items-center">
             <div className="bg-black rounded-full p-3">
