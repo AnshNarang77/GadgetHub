@@ -47,7 +47,7 @@ function Navbar() {
 {/* Mobile NAvbar */}
 
 {isMobileNavOpen && (
-  <div id="mobnav" className='fixed w-screen h-screen bg-neutral-800  top-0 left-0 z-50 md:hidden '>
+  <div id="mobnav" className='fixed w-screen h-[100vh] bg-neutral-800  top-0 left-0 z-50 md:hidden '>
 
     <div className='h-[10vh] bg-neutral-500 p-5 flex justify-between items-center'>
     <div className='text-lg text-red-500 p-1 bg-neutral-200 font-semibold'>GadgetHub</div>
@@ -64,7 +64,7 @@ function Navbar() {
 
   <div className='w-screen h-[100%] '>
 
-   <div className='w-[100%] h-[100%] flex flex-col p-20 justify-around pt-10 items-center text-white'>
+   <div className='w-[100%] h-[100%] flex flex-col p-25 justify-around pt-10 items-center text-white'>
     <NavLink to="/" className={({isActive})=>`text-xl p-2 ${isActive? ' font-semibold border-b-2   border-red-500': 'text-white'}`} onClick={closeNav}>Home</NavLink>
     <NavLink to="/products" className={({isActive})=>`text-xl p-2 ${isActive? ' font-semibold border-b-2   border-red-500': 'text-white'}`} onClick={closeNav}>Products</NavLink>
     <NavLink to="/about" className={({isActive})=>`text-xl p-2 ${isActive? ' font-semibold border-b-2   border-red-500': 'text-white'}`} onClick={closeNav}>About</NavLink>
